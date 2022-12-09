@@ -1,6 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_49un7vl', 'template_lxm1z3g', form.current, 'jkK6s4dVBJnyxKmUG')
+            .then((result) => {
+                console.log(result.text);
+                console.log("message sent")
+                alert("Thank you for messaging me. I will reply your message as soon.");
+                form.reset();
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
     return (
         <section class="contact" id="contact">
             <div class="max-width">
@@ -8,7 +24,7 @@ const Contact = () => {
                 <div class="contact-content">
                     <div class="column left">
                         <div class="text">Get our newsletter</div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus ex in nesciunt magnam iure possimus repellat ipsum. Aperiam quod voluptatem, enim deleniti animi officiis, ipsam qui impedit ipsa, sunt est.</p>
+                        <p>Drop a message</p>
 
                         <div class="icons">
                             <div class="rows">
@@ -40,28 +56,27 @@ const Contact = () => {
 
                     <div class="column right">
                         <div class="text">Message me</div>
-                        <form action="">
+
+                        <form ref={form} onSubmit={sendEmail}>
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" required placeholder="Name"/>
+                                    <input name='user_name' type="text" required placeholder="Name"/>
                                 </div>
                                 <div class="field email">
-                                    <input type="email" required placeholder="Email"/>
+                                    <input name='user_email' type="email" required placeholder="Email"/>
                                 </div>
 
-                            </div>
-
-                            <div class="field">
-                                <input type="text" required placeholder="Subject"/>
                             </div>
 
                             <div class="field textarea">
-                                <textarea name="" placeholder="Describe...." id="" cols="30" rows="10" required></textarea>
+                                <textarea name="message" placeholder="Describe...." id="" cols="30" rows="10" required></textarea>
                             </div>
+
                             <div class="button">
                                 <button type="submit">send message</button>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
