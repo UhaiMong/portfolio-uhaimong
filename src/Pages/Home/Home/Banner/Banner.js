@@ -4,7 +4,7 @@ import resume from '../../../../assets/img/resume_UhaiMong.pdf'
 
 const Banner = () => {
     return (
-        <section class="home" id="home">
+        <section className="home" id="home">
             {/* <Particles
                 id="tsparticles"
                 init={particlesInit}
@@ -82,11 +82,11 @@ const Banner = () => {
                     detectRetina: true,
                 }}
             /> */}
-            <div class="max-width">
-                <div class="home-content">
-                    <div class="text-1">Hello, my name is </div>
-                    <div class="text-2">Uhai Mong </div>
-                    <div class="text-3">And I'm a <span class="typing"></span>
+            <div className="max-width">
+                <div className="home-content">
+                    <div className="text-1">Hello, my name is </div>
+                    <div className="text-2">Uhai Mong </div>
+                    <div className="text-3">And I'm a <span className="typing"></span>
 
                         <span style={{ color: 'red', fontWeight: 'bold' }}>
                             <Typewriter

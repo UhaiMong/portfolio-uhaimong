@@ -18,61 +18,61 @@ const Contact = () => {
             });
     };
     return (
-        <section class="contact" id="contact">
-            <div class="max-width">
-                <h2 class="title">contact me</h2>
-                <div class="contact-content">
-                    <div class="column left">
-                        <div class="text">Get our newsletter</div>
+        <section className="contact" id="contact">
+            <div className="max-width">
+                <h2 className="title">contact me</h2>
+                <div className="contact-content">
+                    <div className="column left">
+                        <div className="text">Get our newsletter</div>
                         <p>Drop a message</p>
 
-                        <div class="icons">
-                            <div class="rows">
-                                <i class="uil uil-user"></i>
-                                <div class="info">
-                                    <div class="head">Name</div>
-                                    <div class="sub-title">Uhai Mong</div>
+                        <div className="icons">
+                            <div className="rows">
+                                <i className="uil uil-user"></i>
+                                <div className="info">
+                                    <div className="head">Name</div>
+                                    <div className="sub-title">Uhai Mong</div>
                                 </div>
                             </div>
 
-                            <div class="rows">
-                                <i class="uil uil-map-marker"></i>
-                                <div class="info">
-                                    <div class="head">Address</div>
-                                    <div class="sub-title">Bandarban,Chattagram,Bangladesh</div>
+                            <div className="rows">
+                                <i className="uil uil-map-marker"></i>
+                                <div className="info">
+                                    <div className="head">Address</div>
+                                    <div className="sub-title">Bandarban,Chattagram,Bangladesh</div>
                                 </div>
                             </div>
 
-                            <div class="rows">
-                                <i class="uil uil-envelope-edit"></i>
-                                <div class="info">
-                                    <div class="head">Email</div>
-                                    <div class="sub-title">admin@2021gmail.com</div>
+                            <div className="rows">
+                                <i className="uil uil-envelope-edit"></i>
+                                <div className="info">
+                                    <div className="head">Email</div>
+                                    <div className="sub-title">admin@2021gmail.com</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="column right">
-                        <div class="text">Message me</div>
+                    <div className="column right">
+                        <div className="text">Message me</div>
 
                         <form ref={form} onSubmit={sendEmail}>
-                            <div class="fields">
-                                <div class="field name">
+                            <div className="fields">
+                                <div className="field name">
                                     <input name='user_name' type="text" required placeholder="Name"/>
                                 </div>
-                                <div class="field email">
+                                <div className="field email">
                                     <input name='user_email' type="email" required placeholder="Email"/>
                                 </div>
 
                             </div>
 
-                            <div class="field textarea">
+                            <div className="field textarea">
                                 <textarea name="message" placeholder="Describe...." id="" cols="30" rows="10" required></textarea>
                             </div>
 
-                            <div class="button">
+                            <div className="button">
                                 <button type="submit">send message</button>
                             </div>
                         </form>

@@ -1,0 +1,44 @@
+[
+    {
+        "_id": "01",
+        "projectName": "Zero-one service",
+        "projectImg": "",
+        "Technologies": "HTML,CSS,React,NodeJs,Firebase,CSS Component library, CSS framework, MongoDB",
+        "sourceCode": "https://github.com/UhaiMong/service-review-client-repo.git",
+        "Details": [
+            {
+                "description": "Add food item as a user. Review the specific food item as a reviewer. Reviewer can modify or remove the his/her review. Pagination and see all section. Delete/Remove added item. Authentication with google firebase. Full image view after clicking the image. View Details specific item.",
+                "img1": "Duke Wiggins",
+                "img2": "Duke Wiggins"
+            }
+        ]
+    },
+    {
+        "_id": "02",
+        "projectName": "Smart-resale stall",
+        "projectImg": "",
+        "Technologies": "HTML,CSS,React,NodeJs,Firebase,CSS Component library, CSS framework, MongoDB",
+        "sourceCode": "https://github.com/UhaiMong/smart-resale-stall-repo.git",
+        "Details": [
+            {
+                "description": "Add product item as a seller to show advertise. Admin can approve and verify the product and delete. Buyer can buy the product and add to cart. Buyer can pay the price via online payment method stripe. Buyer can see his/her ordered product and seller can see his/her sold product. Buyer can delete or remove his/her added product. Admin can control all users buyer/seller or normal user. Authentication with google firebase. Using jwt token for authorization.",
+                "img1": "Duke Wiggins",
+                "img2": "Duke Wiggins"
+            }
+        ]
+    },
+    {
+        "_id": "03",
+        "projectName": "Doctor portal",
+        "projectImg": "",
+        "Technologies": "HTML,CSS,React,NodeJs,Firebase,CSS Component library, CSS framework, MongoDB",
+        "sourceCode": "https://github.com/UhaiMong/doctor-portal.git",
+        "Details": [
+            {
+                "description": "Add product item as a seller to show advertise. Admin can approve and verify the product and delete. Buyer can buy the product and add to cart. Buyer can pay the price via online payment method stripe. Buyer can see his/her ordered product and seller can see his/her sold product. Buyer can delete or remove his/her added product. Admin can control all users buyer/seller or normal user. Authentication with google firebase. Using jwt token for authorization.",
+                "img1": "Duke Wiggins",
+                "img2": "Duke Wiggins"
+            }
+        ]
+    }
+]
